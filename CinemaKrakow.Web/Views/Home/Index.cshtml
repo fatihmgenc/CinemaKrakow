@@ -1,0 +1,14 @@
+﻿@model IEnumerable<CinemaKrakow.Data.Models.Movie>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Aviable Movies at Cinema Krakow</h1>
+    <div>
+        There are @Model.Count() Movies in the db. 
+    </div>
+</div>
+
+

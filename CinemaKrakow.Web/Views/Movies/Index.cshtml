@@ -1,0 +1,16 @@
+﻿@model IEnumerable<CinemaKrakow.Data.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@foreach(var item in Model)
+{
+    @Html.Partial("_MovieSummary",item)
+}
+
