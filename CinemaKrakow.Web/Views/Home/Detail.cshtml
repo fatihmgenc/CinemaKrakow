@@ -1,0 +1,43 @@
+﻿@model CinemaKrakow.Data.Models.Movie
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+
+    <div>
+        <h4>Movie</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MovieKind)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MovieKind)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EditorRating)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EditorRating)
+            </dd>
+
+
+        </dl>
+        <p> Monday - Friday 11:00  / 14:00 / 18:00 / 22:00 </p>
+    </div>
+    <p>
+        @Html.ActionLink("Back ", "Index")
+    </p>
+

@@ -1,20 +1,19 @@
 ﻿using CinemaKrakow.Data.Models;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CinemaKrakow.Data.Services
 {
     public class SqlMovieData : IMovieData
     {
         private readonly CinemaKrakowDbContext db;
-
+        
         public SqlMovieData(CinemaKrakowDbContext db )
         {
             this.db = db;
+            
         }
         public void Add(Movie movie)
         {
@@ -24,8 +23,8 @@ namespace CinemaKrakow.Data.Services
 
         public void Delete(int id)
         {
-            var Moveis = Get(id);
-            db.Movies.Remove(Moveis);
+            var Movei = Get(id);
+            db.Movies.Remove(Movei);
             db.SaveChanges();
         }
 

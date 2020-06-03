@@ -11,6 +11,10 @@ namespace CinemaKrakow.Data.Models
         None,
         Action,
         Horror,
-        Documantory
+        Documantory,
+        Comedies,
+        Adventure,
+        musicals,
+        dramas
     }
 }

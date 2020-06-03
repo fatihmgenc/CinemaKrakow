@@ -10,7 +10,6 @@ namespace CinemaKrakow.Web.Controllers
     public class HomeController : Controller
     {
         IMovieData db;
-
         public HomeController(IMovieData db)
         {
             this.db = db;
@@ -24,16 +23,20 @@ namespace CinemaKrakow.Web.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = "Description";
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact";
 
             return View();
+        }
+        public ActionResult Detail(int id)
+        {
+            var movie = db.Get(id);
+            return View(movie);
         }
     }
 }

@@ -158,8 +158,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\GreetingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ModeratorController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -293,7 +293,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Greeting\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\NotFound.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -311,6 +310,9 @@
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Movies\Delete.cshtml" />
     <Content Include="Views\Shared\_MovieSummary.cshtml" />
+    <Content Include="Views\Moderator\Login.cshtml" />
+    <Content Include="Views\Moderator\NotFound.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

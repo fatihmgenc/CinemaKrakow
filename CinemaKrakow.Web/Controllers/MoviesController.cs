@@ -57,7 +57,7 @@ namespace CinemaKrakow.Web.Controllers
         public ActionResult Edit(Movie movie)
         {
             db.Edit(movie);
-            TempData["Message"] = "You Gave Edited the movie";
+            TempData["Message"] = "You Have Edited the movie";
             return RedirectToAction("Details", new { id = movie.Id });
         }
 
