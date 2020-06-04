@@ -1,6 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Web;
+using System.Web.Mvc;
 
-namespace CinemaKrakow.Web
+namespace WebApplication2
 {
     public class FilterConfig
     {
