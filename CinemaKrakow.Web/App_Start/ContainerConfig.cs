@@ -26,7 +26,7 @@ namespace CinemaKrakow.Web
                    .As<IMovieData>()
                    .InstancePerRequest();
             builder.RegisterType<CinemaKrakowDbContext>().InstancePerRequest();
-            
+             
             
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
